@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  text-align: center;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+select {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.mic-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.mic-container img {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.mic-red {
+  filter: hue-rotate(0deg); /* Red color */
+}
+
+.mic-green {
+  filter: hue-rotate(120deg); /* Green color */
+}
+
+.mic-status {
+  font-weight: bold;
+  color: #fff;
+}
+
+.mic-listening {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.audio-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+audio {
+  margin-top: 10px;
+}
