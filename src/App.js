@@ -13,21 +13,6 @@ const App = () => {
   const audioContextRef = useRef(null);
   const audioPlayerRef = useRef(null);
 
-  useEffect(() => {
-    //Microphone access
-    const requestMicrophoneAccess = async () => {
-      try {
-        await navigator.mediaDevices.getUserMedia({ audio: true });
-        setHasPersmission(true);
-      } catch (err) {
-        console.error('Microphone access denied', err);
-        alert('Microphone access is required for this feature. Please allow microphone access in your browser settings.');
-      }
-    };
-    requestMicrophoneAccess();
-  }
-  , []);
-
   const startRecording = async () => {
     const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
     const audioContext = new (window.AudioContext || window.webkitAudioContext)();
