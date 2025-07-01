@@ -22,6 +22,7 @@ const App = () => {
     recorderRef.current = recorder;
     audioContextRef.current = audioContext;
 
+    // recorder.start();
     recorder.start();
     setIsListening(true);
   };
